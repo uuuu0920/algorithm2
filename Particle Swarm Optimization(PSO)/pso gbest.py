@@ -64,7 +64,7 @@ lower= -600
 upper= 600
 time_start =time.time()
 cal_value=[]
-for qq in range(30):
+for qq in range(1):
     
     x=np.arange(iteration+1)
 
@@ -87,9 +87,11 @@ for qq in range(30):
     plt.xlabel('PSO')
     plt.show()
     cal_value.append(solver.globalBestSolutionValue)
-print("標",cal_value.index( min(cal_value) ))    
-print("30次平均值",sum(cal_value) / len(cal_value))
-print("最小值",min(cal_value))    
-
-time_end =time.time()
-print("花費時間",time_end-time_start)
+# =============================================================================
+# print("標",cal_value.index( min(cal_value) ))    
+# print("30次平均值",sum(cal_value) / len(cal_value))
+# print("最小值",min(cal_value))    
+# 
+# time_end =time.time()
+# print("花費時間",time_end-time_start)
+# =============================================================================
